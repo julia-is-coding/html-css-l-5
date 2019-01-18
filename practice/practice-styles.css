@@ -1,0 +1,49 @@
+/* * {
+    box-sizing: content-box; --> variant #1
+} */
+
+* {
+    box-sizing: border-box;
+
+    /* ЕСЛИ ДЛЯ box-sizing ЗАДАЁМ ЗНАЧЕНИЕ border-box, 
+    ТО В width БУДУТ ВКЛЮЧЕНЫ CONTENT, PADDING И BORDER. */
+}
+
+body {
+    margin: 0;
+}
+
+.chess-board {
+    /* width: 400px; --> variant #1
+    height: 400px; --> variant #1 */ 
+
+    width: 420px; 
+    height: 420px;
+    border: 10px solid purple;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 200px auto;
+    font-size: 0;
+}
+
+.chess-board>div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.chess-board>.red {
+    /* width: 50px;
+    height: 50px; */
+    background: red;
+}
+
+.chess-board>.black {
+    /* width: 50px;
+    height: 50px; */
+    background: black;
+}
+
+.red, .black {
+    width: 50px;
+    height: 50px;
+}

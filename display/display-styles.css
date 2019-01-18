@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    color: #EDEEF3;
+    background: #3a3a3a;
+    margin: 0;
+}
+
+h1, p, div {
+    border: 2px solid #5bcee8;
+    background: rgba(172, 208, 234, 0.33);
+}
+
+strong, em {
+    color: #ffbb49;
+    background: rgba(199, 130, 131, 0.5);
+}
+
+a {
+    color: #3fbdf9;
+    background: rgba(199, 130, 131, 0.5);
+
+    /* display: block;
+    background: purple; */
+}
+
+img {
+    vertical-align: middle; /* --> по умолчанию bottom */
+}
+
+.block {
+    width: 400px;
+}
+
+.inline-block { /* --> У КОНТЕЙНЕРА */
+    font-size: 0; /* --> задаём свойство с размером шрифта "0" */
+} /* --> для того, чтоб избавиться от "разрыва" между блоками строчно-блочных элементов */
+
+.inline-block p {
+    display: inline-block;
+    width: 30%;
+    font-size: 20px;
+}
